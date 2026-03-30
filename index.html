@@ -25,3 +25,37 @@
 <p id="secret" style="display:none; font-size:20px;">
  I love you so much Ashley.
 </p>
+<h2>Click when you feel...</h2>
+
+<div style="margin-top: 20px;">
+  <button onclick="showMessage('sad')" style="margin: 10px; padding: 10px 20px; font-size: 16px;">
+    Click if you're sad
+  </button>
+
+  <button onclick="showMessage('miss')" style="margin: 10px; padding: 10px 20px; font-size: 16px;">
+    Click if you miss me
+  </button>
+
+  <button onclick="showMessage('happy')" style="margin: 10px; padding: 10px 20px; font-size: 16px;">
+    Click if you're happy
+  </button>
+</div>
+
+<p id="message" style="margin-top: 30px; font-size: 18px;"></p>
+
+<script>
+function showMessage(type) {
+  if (type === 'sad') {
+    document.getElementById("message").innerText =
+      "I'm always here for you, even when things feel heavy 💚";
+  }
+  if (type === 'miss') {
+    document.getElementById("message").innerText =
+      "I miss you too. I can't wait to see you again.";
+  }
+  if (type === 'happy') {
+    document.getElementById("message").innerText =
+      "Seeing you happy is my favorite thing in the world.";
+  }
+}
+</script>
